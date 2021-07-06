@@ -1,0 +1,14 @@
+/* ./src/main.css */
+@tailwind base;
+@tailwind components;
+/* @font-face {
+  font-family: 'smart4dsTitles';
+  src: local('./fonts/smart4ds.eot');
+  src: local('./fonts/ar-fonts/smart4ds2.eot?#iefix')
+      format('embedded-opentype'),
+    local('./fonts/smart4ds2.woff') format('woff'),
+    local('./fonts/smart4ds.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; 
+} */
+@tailwind utilities;
