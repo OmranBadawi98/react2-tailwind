@@ -5,25 +5,23 @@ import SearchIcon from '@material-ui/icons/Search'
 function topbar() {
   return (
     <>
-      <div className='flex bg-white shadow font-serif w-screen  absolute h-16'>
+      <div className='flex bg-white shadow font-serif w-screen  absolute h-16 pr-56'>
         <div className='pt-0 pr-5 h-full flex items-center justify-between'>
-          <div className='mr-52'>
-            <button className='flex items-center text-l text-gray-800 '>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                className='h-5 w-5'
-                viewBox='0 0 20 20'
-                fill='currentColor'
-              >
-                <path
-                  fillRule='evenodd'
-                  d='M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z'
-                  clipRule='evenodd'
-                />
-              </svg>
-              اضافة
-            </button>
-          </div>
+          <button className='flex items-center text-l text-gray-800 '>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              className='h-5 w-5'
+              viewBox='0 0 20 20'
+              fill='currentColor'
+            >
+              <path
+                fillRule='evenodd'
+                d='M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z'
+                clipRule='evenodd'
+              />
+            </svg>
+            اضافة
+          </button>
         </div>
         <div className='flex flex-grow-1 items-center w-100 mr-auto'>
           <div className=' relative border-2 sm:hidden md:block lg:block hidden hover:bg-gray-200 hover:cursor-text rounded rounded-l-sm items-center pr-2'>

@@ -8,8 +8,8 @@ function App() {
   return (
     <Router>
       <Topbar />
-      <div className='flex'>
-        <Sidebar />
+      <Sidebar />
+      <div className='bg-haram-200 h-screen mr-56 pt-16'>
         <Switch>
           <Route exact path='/'>
             <Home />

@@ -14,10 +14,11 @@ import {
 } from '@material-ui/icons'
 import { Link } from 'react-router-dom'
 import HomeIcon from '@material-ui/icons/Home'
+
 function sidebar() {
   return (
-    <div className='flex h-screen bg-haram sticky w-56'>
-      <div className='w-52 text-gray-300'>
+    <div className='h-screen bg-haram absolute w-56'>
+      <div className='text-gray-300'>
         <div className='mb-3'>
           <h3 className='text-xl text-white pt-5 pr-5 pb-2'>
             <Eco className='ml-3' />

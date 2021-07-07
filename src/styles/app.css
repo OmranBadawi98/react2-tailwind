@@ -6696,6 +6696,9 @@ video {
 .w-2\/5 {
   width: 40%;
 }
+.w-grid-46 {
+  width: 46%;
+}
 
 .w-3\/5 {
   width: 60%;
@@ -15341,6 +15344,10 @@ video {
 .bg-haram-100 {
   --tw-bg-opacity: 1;
   background-color: rgba(46, 62, 62, var(--tw-bg-opacity));
+}
+.bg-haram-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(240, 240, 240, var(--tw-bg-opacity));
 }
 
 .bg-yellow-300 {

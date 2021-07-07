@@ -1,6 +1,7 @@
 /* ./src/main.css */
 @tailwind base;
 @tailwind components;
+
 /* @font-face {
   font-family: 'smart4dsTitles';
   src: local('./fonts/smart4ds.eot');
