@@ -11,29 +11,29 @@ function Home() {
         </h1>
       </div>
       <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-4 md:gap-4 lg:gap-6 gap-6 mb-6'>
-        <div className='grid grid-cols-2 gap-x-6 gap-y-4 cols-span-1 lg:col-span-1 md:col-span-2 sm:col-span-1 '>
-          <div className='text-sm flex items-center p-8 w-full h-16 bg-white shadow'>
+        <div className='grid grid-cols-2 gap-x-6 gap-y-4 cols-span-1 lg:col-span-1 md:col-span-2 sm:col-span-2 '>
+          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 md:h-24 lg:h-16 bg-white shadow'>
             <Flip className='text-haram-icon1' />
             <div className='text-sm pr-2 text-gray-500'>
               صفحات الموقع
               <div className='text-black text-lg'>5</div>
             </div>
           </div>
-          <div className='text-sm flex items-center p-8 w-full h-16 bg-white shadow'>
+          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 md:h-24 lg:h-16 bg-white shadow'>
             <LocalBar className='text-haram-icon2' />
             <div className='text-sm pr-2 text-gray-500'>
               الخدمات
               <div className='text-black text-lg'>4</div>
             </div>
           </div>
-          <div className='text-sm flex items-center p-8 w-full h-16 mt-2 bg-white shadow'>
+          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 md:h-24 lg:h-16 mt-2 bg-white shadow'>
             <Cast className='text-haram-icon3' />
             <div className='text-sm pr-2 text-gray-500'>
               الأخبار
               <div className='text-black text-lg'>6</div>
             </div>
           </div>
-          <div className='text-sm flex items-center p-8 w-full h-16 mt-2 bg-white shadow'>
+          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 md:h-24 lg:h-16 mt-2 bg-white shadow'>
             <Image className='text-haram-icon4' />
             <div className='text-sm pr-2 text-gray-500'>
               الصور
@@ -50,22 +50,24 @@ function Home() {
           </div>
         </div>
         <div className='col-span-2 flex'>
-          <div className='w-full bg-white shadow h-60 text-sm flex items-center justify-center'>
-            <div className='h-full w-full flex-wrap bg-white shadow flex items-center justify-center'>
-              <div className='w-full h-16 text-xl p-3 pr-3'>
+          <div className='w-full bg-white shadow h-60 xl:h-64 lg:h-80 md:h-80 sm:h-96 text-sm flex items-center justify-center'>
+            <div className='h-full w-full flex-wrap bg-white shadow flex '>
+              <div className='w-full h-16 lg:h-16 md:h-14 text-xl pt-3 pr-3'>
                 عدد الزوار
                 <p className='text-sm mt-2'>الزوار لآخر 7 أيام</p>
               </div>
-              <div className='w-full h-44 p-3 pt-6'>
+              <div className='w-full p-3 md:h-48'>
                 <div>Chart</div>
               </div>
             </div>
             <div className='h-full w-2/4 bg-haram-opacity shadow bg-white flex flex-wrap items-center justify-center '>
-              <div className='w-full h-16 text-xl pt-3 pr-3'>التقارير</div>
-              <div className='w-full text-base h-44 text-gray-500 pr-3'>
+              <div className='w-full h-16 lg:h-16 md:h-14 text-xl pt-3 pr-3'>
+                التقارير
+              </div>
+              <div className='w-full text-base text-gray-500 pr-3'>
                 يمكنك مشاهدة المزيد من التقارير : حسب التاريخ, الدولة, المدينة,
                 نظام التشغيل, المتصفح, طريقة الوصول, اسم المضيف, شركة الاتصال
-                <div className='pt-2 text-black'>
+                <div className='pt-2 text-black md:mb-4'>
                   <button class='pb-2 flex flex-wrap mb-2 border-green-500 border-2 hover:bg-green-500 hover:text-white py-1 px-4 rounded-full'>
                     مشاهدة المزيد
                   </button>
