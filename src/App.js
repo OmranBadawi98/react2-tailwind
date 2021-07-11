@@ -14,7 +14,7 @@ function App() {
       <div className='h-screen'>
         <Sidebar />
         {/* </div> */}
-        <div className='h-screen overflow-y-auto no-scrollbar bg-haram-200 mr-56 pt-16'>
+        <div className='h-screen overflow-y-auto no-scrollbar bg-haram-200 sm:mr-0 lg:mr-56 pt-16'>
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/Analytics' component={Analytics} />

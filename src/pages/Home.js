@@ -12,28 +12,28 @@ function Home() {
       </div>
       <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 sm:gap-y-4 md:gap-4 lg:gap-6 gap-6 mb-6'>
         <div className='grid grid-cols-2 gap-x-6 gap-y-4 cols-span-1 lg:col-span-1 md:col-span-2 sm:col-span-2 '>
-          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 md:h-24 lg:h-16 bg-white shadow'>
+          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 sm:h-24 md:h-24 lg:h-20 bg-white shadow'>
             <Flip className='text-haram-icon1' />
             <div className='text-sm pr-2 text-gray-500'>
               صفحات الموقع
               <div className='text-black text-lg'>5</div>
             </div>
           </div>
-          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 md:h-24 lg:h-16 bg-white shadow'>
+          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 sm:h-24 md:h-24 lg:h-20 bg-white shadow'>
             <LocalBar className='text-haram-icon2' />
             <div className='text-sm pr-2 text-gray-500'>
               الخدمات
               <div className='text-black text-lg'>4</div>
             </div>
           </div>
-          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 md:h-24 lg:h-16 mt-2 bg-white shadow'>
+          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 sm:h-24 md:h-24 lg:h-20 mt-2 bg-white shadow'>
             <Cast className='text-haram-icon3' />
             <div className='text-sm pr-2 text-gray-500'>
               الأخبار
               <div className='text-black text-lg'>6</div>
             </div>
           </div>
-          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 md:h-24 lg:h-16 mt-2 bg-white shadow'>
+          <div className='text-sm flex items-center p-8 md:p-4 w-full h-16 sm:h-24 md:h-24 lg:h-20 mt-2 bg-white shadow'>
             <Image className='text-haram-icon4' />
             <div className='text-sm pr-2 text-gray-500'>
               الصور

@@ -9,7 +9,7 @@ import {
   DynamicFeed,
   ChatBubbleOutline,
   WorkOutline,
-  Report,
+  Report
 } from '@material-ui/icons'
 import { Link } from 'react-router-dom'
 import HomeIcon from '@material-ui/icons/Home'
@@ -17,7 +17,7 @@ import React from 'react'
 
 function sidebar() {
   return (
-    <div className='h-screen bg-haram absolute w-56 text-gray-300 overflow-y-auto no-scrollbar'>
+    <div className='sm:invisible lg:visible h-screen bg-haram absolute w-56 text-gray-300 overflow-y-auto no-scrollbar'>
       {/* <div className='text-gray-300'> */}
       {/* <div className='mb-3 '> */}
       <h3 className='text-xl text-white pt-5 pr-5 pb-2 flex items-center font-bold '>
@@ -67,14 +67,18 @@ function sidebar() {
                 المنتجات
               </li>
             </Link>
-            <li className='items-center pt-1 pb-1 pr-5 mb-2 cursor-pointer flex text-lg hover:bg-gray-700 hover:text-white'>
-              <AttachMoney className='ml-3' />
-              المعاملات
-            </li>
-            <li className='items-center pt-1 pb-1 pr-5 mb-2 cursor-pointer flex text-lg hover:bg-gray-700 hover:text-white'>
-              <BarChart className='ml-3' />
-              التقارير
-            </li>
+            <Link to='/معاملات' className='link'>
+              <li className='items-center pt-1 pb-1 pr-5 mb-2 cursor-pointer flex text-lg hover:bg-gray-700 hover:text-white'>
+                <AttachMoney className='ml-3' />
+                المعاملات
+              </li>
+            </Link>
+            <Link to='/Report' className='link'>
+              <li className='items-center pt-1 pb-1 pr-5 mb-2 cursor-pointer flex text-lg hover:bg-gray-700 hover:text-white'>
+                <BarChart className='ml-3' />
+                التقارير
+              </li>
+            </Link>
           </ul>
         </div>
         <div className='mb-2'>
