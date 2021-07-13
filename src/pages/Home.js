@@ -1,7 +1,12 @@
 import { Flip, LocalBar, Cast, Image } from '@material-ui/icons'
 import React from 'react'
+import Chart from '../components/chart/chart'
+import { userData } from '../../src/dummyData'
+import Chart2 from '../components/chart/chart2'
+import ChartCircle from '../components/chart/chartCircle'
+// import widgetSm from '../components/widgetSm/widgetSm'
 
-function Home() {
+export default function Home() {
   return (
     // <div className='transition ease-out duration-700 '>
     <div className='m-6'>
@@ -50,21 +55,24 @@ function Home() {
           </div>
         </div>
         <div className='col-span-2 flex'>
-          <div className='w-full bg-white shadow h-60 xl:h-64 lg:h-80 md:h-80 sm:h-96 text-sm flex items-center justify-center'>
-            <div className='h-full w-full flex-wrap bg-white shadow flex '>
+          <div className='w-full bg-white shadow h-60 xl:h-80 lg:h-80 md:h-80 sm:h-96 text-sm flex items-center justify-center'>
+            <div className='h-full w-full flex flex-wrap bg-white shadow  '>
               <div className='w-full h-16 lg:h-16 md:h-14 text-xl pt-3 pr-3'>
                 عدد الزوار
                 <p className='text-sm mt-2'>الزوار لآخر 7 أيام</p>
               </div>
-              <div className='w-full p-3 md:h-48'>
-                <div>Chart</div>
-              </div>
+              <Chart
+                data={userData}
+                title='User Analytics'
+                grid
+                dataKey='Active User'
+              />
             </div>
-            <div className='h-full w-2/4 bg-haram-opacity shadow bg-white flex flex-wrap items-center justify-center '>
-              <div className='w-full h-16 lg:h-16 md:h-14 text-xl pt-3 pr-3'>
+            <div className='h-full w-2/4 bg-haram-opacity shadow bg-white items-center justify-center '>
+              <div className='w-full h-16 lg:h-16 md:h-14 text-xl pt-3 pr-3 flex flex-wrap '>
                 التقارير
               </div>
-              <div className='w-full text-base text-gray-500 pr-3'>
+              <div className='w-full text-base text-gray-500 pl-3 pr-3 flex flex-wrap'>
                 يمكنك مشاهدة المزيد من التقارير : حسب التاريخ, الدولة, المدينة,
                 نظام التشغيل, المتصفح, طريقة الوصول, اسم المضيف, شركة الاتصال
                 <div className='pt-2 text-black md:mb-4'>
@@ -80,10 +88,9 @@ function Home() {
           </div>
         </div>
       </div>
-
       <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 sm:gap-y-4 md:gap-4 lg:gap-6 gap-6 mb-6'>
-        <div className='h-72'>
-          <div className='bg-white shadow border text-sm flex items-center justify-center h-16'>
+        <div className='h-80 shadow border items-center justify-center'>
+          <div className='bg-white text-sm flex items-center justify-center h-16'>
             <div className='w-full h-16 text-xl p-2 pr-3 '>
               معدل الزوار
               <p className='text-sm '>
@@ -91,22 +98,71 @@ function Home() {
               </p>
             </div>
           </div>
-          <div className='bg-gray-500 text-sm text-grey-dark flex items-center justify-center h-56'>
-            1
+          <div className='text-sm text-grey-dark flex items-center justify-center h-64'>
+            <Chart2 />
           </div>
         </div>
-        <div className='h-72'>
-          <div className='bg-white shadow border text-sm text-grey-dark flex items-center justify-center h-16'>
+        <div className='h-80 shadow border'>
+          <div className='bg-white text-sm text-grey-dark flex items-center justify-center h-16'>
             <div className='w-full h-16 text-xl p-2 pr-3 '>
               متصفح الإنترنت
               <p className='text-sm '>نسبة المتصفحات حسب أخر 7 أيام</p>
             </div>
           </div>
-          <div className='bg-gray-500 text-sm text-grey-dark flex items-center justify-center h-56'>
-            1
+          <div className='bg-white border-t-2 text-sm text-grey-dark flex h-64'>
+            <div className='flex-wrap flex w-full'>
+              <div
+                className='bg-white flex flex-col 
+                    items-center justify-center w-full text-sm text-grey-dark'
+              >
+                <ChartCircle />
+              </div>
+              <div
+                className='bg-white flex flex-col 
+                    items-center justify-center w-full text-sm text-grey-dark '
+              >
+                <div
+                  className='pb-3 flex flex-col 
+                    items-center justify-center'
+                >
+                  <h1>Chrome</h1>
+                  <h3 className='pb-3'>332</h3>
+
+                  <button class='pb-2 border hover:bg-gray-200 py-1 px-4 rounded-full'>
+                    المزيد
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className='bg-haram-opacity h-full w-full'>
+              <div className='flex-wrap flex w-full'>
+                <div
+                  className='flex flex-col 
+                    items-center justify-center w-full text-sm text-grey-dark'
+                >
+                  <ChartCircle />
+                </div>
+                <div
+                  className=' flex flex-col 
+                    items-center justify-center w-full text-sm text-grey-dark '
+                >
+                  <div
+                    className='pb-3 flex flex-col 
+                    items-center justify-center'
+                  >
+                    <h1>Chrome</h1>
+                    <h3 className='pb-3'>332</h3>
+
+                    <button class='pb-2 border hover:bg-gray-200 py-1 px-4 rounded-full'>
+                      المزيد
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className='h-72'>
+        <div className='h-80'>
           <div className='bg-haram-opacity border shadow text-sm text-grey-dark flex items-center justify-center h-16'>
             <div className='w-full h-16 text-xl p-2 pr-3 '>
               زوار اليوم حسب الدولة
@@ -115,39 +171,37 @@ function Home() {
               </p>
             </div>
           </div>
-          <div className='bg-gray-500 text-sm text-grey-dark flex items-center justify-center h-56'>
-            1
-          </div>
+          <div className='bg-gray-500 text-sm text-grey-dark flex items-center justify-center h-64'></div>
         </div>
-        <div className='h-72'>
+        <div className='h-80'>
           <div className='bg-yellow-500 text-sm text-grey-dark flex items-center justify-center h-16'>
             1
           </div>
-          <div className='bg-gray-500 text-sm text-grey-dark flex items-center justify-center h-56'>
+          <div className='bg-gray-500 text-sm text-grey-dark flex items-center justify-center h-64'>
             1
           </div>
         </div>
-        <div className='h-72'>
+        <div className='h-80'>
           <div className='bg-yellow-500 text-sm text-grey-dark flex items-center justify-center h-16'>
             1
           </div>
-          <div className='bg-gray-500 text-sm text-grey-dark flex items-center justify-center h-56'>
+          <div className='bg-gray-500 text-sm text-grey-dark flex items-center justify-center h-64'>
             1
           </div>
         </div>
-        <div className='h-72'>
+        <div className='h-80'>
           <div className='bg-yellow-500 text-sm text-grey-dark flex items-center justify-center h-16'>
             1
           </div>
-          <div className='bg-gray-500 text-sm text-grey-dark flex items-center justify-center h-56'>
+          <div className='bg-gray-500 text-sm text-grey-dark flex items-center justify-center h-64'>
             1
           </div>
         </div>
       </div>
     </div>
-    // </div>
+    //{' '}
   )
 }
 
-export default Home
+// export default Home
 // #53B3CB

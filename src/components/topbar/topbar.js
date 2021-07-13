@@ -28,7 +28,7 @@ function topbar() {
           </button>
         </div>
         <div className='flex flex-grow-1 items-center w-100 mr-auto'>
-          <div class='relative mx-auto flex-wrap sm:hidden md:block lg:block hidden'>
+          <div class='relative mx-auto sm:hidden md:block lg:block hidden'>
             <input
               class='border border-gray-300 bg-white h-7 px-2 pr-11 rounded rounded-l-sm text-sm focus:outline-none'
               type='search'
@@ -37,20 +37,11 @@ function topbar() {
             />
             <button
               type='submit'
-              className='border border-gray-300 border-r-0 rounded rounded-r-sm w-9 hover:cursor-pointer'
+              className='border border-gray-300 border-r-0 rounded h-7 rounded-r-sm w-9 hover:cursor-pointer focus:outline-none mb-1'
             >
               <SearchIcon />
             </button>
           </div>
-          {/* <div className='relative border h-7 sm:hidden md:block lg:block hidden focus:outline-none hover:cursor-text rounded rounded-r-sm items-center pr-2'>
-            <input className='w-full ' type='' placeholder='بحث ...' />
-          </div> */}
-          {/* <button
-            type='submit'
-            className='border border-gray-300 sm:hidden md:block lg:block hidden border-r-0 rounded rounded-r-sm w-9 hover:cursor-pointer'
-          >
-            <SearchIcon />
-          </button> */}
           <div className='relative cursor-pointer mr-3'>
             <NotificationsNone />
             <span className='absolute -inset-1 inset-x-0 h-3 w-3  bg-red-500 text-white rounded-lg justify-center text-xs'></span>

@@ -60365,6 +60365,11 @@ video {
       max-width: 1024px;
     }
   }
+   @media (min-width: 900px) {
+    .md\:container {
+      max-width: 900px;
+    }
+  }
 
   @media (min-width: 1280px) {
     .md\:container {
