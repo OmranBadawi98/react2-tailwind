@@ -1,5 +1,13 @@
 import React from 'react'
-import { Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts'
+import {
+  Area,
+  AreaChart,
+  CartesianGrid,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis
+} from 'recharts'
 const data = [
   {
     name: 'Page A',
@@ -48,45 +56,45 @@ const data = [
 function chart2() {
   return (
     <div
-      className='bg-white border-t-2 h-56 md:h-56 w-full items-center flex flex-wrap'
+      className='bg-white border-t-2 h-64 md:h-64 w-full items-center flex flex-wrap'
       dir='ltr'
     >
-      <AreaChart
-        width={527}
-        height={220}
-        data={data}
-        // padding={{ top: 1, right: 2, left: 0, bottom: 0 }}
-        // margin={{ top: 2, right: 2, left: 2, bottom: 2 }}
-      >
-        <defs>
-          <linearGradient id='colorUv' x1='0' y1='0' x2='0' y2='1'>
-            <stop offset='5%' stopColor='#8884d8' stopOpacity={0.8} />
-            <stop offset='95%' stopColor='#8884d8' stopOpacity={0} />
-          </linearGradient>
-          <linearGradient id='colorPv' x1='0' y1='0' x2='0' y2='1'>
-            <stop offset='5%' stopColor='#82ca9d' stopOpacity={0.8} />
-            <stop offset='95%' stopColor='#82ca9d' stopOpacity={0} />
-          </linearGradient>
-        </defs>
-        <XAxis dataKey='name' />
-        <YAxis />
-        <CartesianGrid strokeDasharray='3 3' />
-        <Tooltip />
-        <Area
-          type='monotone'
-          dataKey='uv'
-          stroke='#8884d8'
-          fillOpacity={1}
-          fill='url(#colorUv)'
-        />
-        <Area
-          type='monotone'
-          dataKey='pv'
-          stroke='#82ca9d'
-          fillOpacity={1}
-          fill='url(#colorPv)'
-        />
-      </AreaChart>
+      <ResponsiveContainer width='95%' height={220}>
+        <AreaChart
+          data={data}
+          // padding={{ top: 1, right: 2, left: 0, bottom: 0 }}
+          // margin={{ top: 2, right: 2, left: 2, bottom: 2 }}
+        >
+          <defs>
+            <linearGradient id='colorUv' x1='0' y1='0' x2='0' y2='1'>
+              <stop offset='5%' stopColor='#8884d8' stopOpacity={0.8} />
+              <stop offset='95%' stopColor='#8884d8' stopOpacity={0} />
+            </linearGradient>
+            <linearGradient id='colorPv' x1='0' y1='0' x2='0' y2='1'>
+              <stop offset='5%' stopColor='#82ca9d' stopOpacity={0.8} />
+              <stop offset='95%' stopColor='#82ca9d' stopOpacity={0} />
+            </linearGradient>
+          </defs>
+          <XAxis dataKey='name' />
+          <YAxis />
+          <CartesianGrid strokeDasharray='3 3' />
+          <Tooltip />
+          <Area
+            type='monotone'
+            dataKey='uv'
+            stroke='#8884d8'
+            fillOpacity={1}
+            fill='url(#colorUv)'
+          />
+          <Area
+            type='monotone'
+            dataKey='pv'
+            stroke='#82ca9d'
+            fillOpacity={1}
+            fill='url(#colorPv)'
+          />
+        </AreaChart>
+      </ResponsiveContainer>
     </div>
   )
 }

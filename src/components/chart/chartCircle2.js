@@ -1,15 +1,10 @@
 import React from 'react'
-import {
-  RadialBarChart,
-  PolarAngleAxis,
-  RadialBar,
-  ResponsiveContainer
-} from 'recharts'
+import { RadialBarChart, PolarAngleAxis, RadialBar } from 'recharts'
 
-const data = [{ name: 'L1', value: 60 }]
+const data = [{ name: 'L1', value: 40 }]
 const circleSize = 150
 
-function chartCircle() {
+function chartCircle2() {
   return (
     <RadialBarChart
       width={circleSize}
@@ -34,7 +29,7 @@ function chartCircle() {
         clockWise
         dataKey='value'
         cornerRadius={circleSize / 2}
-        fill='#82ca9d'
+        fill='#FEFB18'
       />
       <text
         x={circleSize / 2}
@@ -43,10 +38,10 @@ function chartCircle() {
         dominantBaseline='middle'
         className='progress-label text-xl'
       >
-        60%
+        40%
       </text>
     </RadialBarChart>
   )
 }
 
-export default chartCircle
+export default chartCircle2
