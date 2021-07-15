@@ -20,7 +20,7 @@ import SubMenu from './subMenu'
 
 function sidebar() {
   return (
-    <div className='sm:invisible lg:visible h-screen bg-haram absolute w-56 text-gray-300 overflow-y-auto no-scrollbar'>
+    <div className='sm:invisible lg:visible h-screen bg-haram absolute w-60 text-gray-300 overflow-y-auto no-scrollbar'>
       {/* <Topbar /> */}
       {/* <div className='text-gray-300'> */}
       {/* <div className='mb-3 '> */}
@@ -34,7 +34,7 @@ function sidebar() {
         لوحة التحكم
       </h3>
       <div className='space-y-6 bg-haram mb-12'>
-        <div className='mb-2 mt-4 w-56'>
+        <div className='mb-2 mt-4 w-60'>
           {SidebarData.map((item, index) => {
             return <SubMenu item={item} key={index} />
           })}
