@@ -2,14 +2,26 @@
 import { Language, Menu, NotificationsNone, Settings } from '@material-ui/icons'
 import SearchIcon from '@material-ui/icons/Search'
 import React from 'react'
+// import Sidebar from '../sidebar/sidebar'
 
+// const topbar = (props) => {
+//   const [sidebar, setSidebar] = useState(false)
+
+//   const showSidebar = () => setSidebar(!sidebar)
+// }
 function topbar() {
   return (
     <div>
       <div className='flex bg-white shadow font-serif w-screen  absolute h-16 sm:pr-0 lg:pr-56'>
         <div className='pt-0 pr-5 h-full flex items-center justify-between'>
-          <div className='lg:hidden sm:visible'>
+          <div
+            className='lg:hidden sm:visible '
+            onClick={() => {
+              console.log('test')
+            }}
+          >
             <Menu className='ml-3' />
+            {/* <Sidebar /> */}
           </div>
           <button className='flex items-center text-l text-gray-800 '>
             <svg
@@ -63,5 +75,4 @@ function topbar() {
     </div>
   )
 }
-
 export default topbar

@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-  RadialBarChart,
-  PolarAngleAxis,
-  RadialBar,
-  ResponsiveContainer
-} from 'recharts'
+import { RadialBarChart, PolarAngleAxis, RadialBar } from 'recharts'
 
 const data = [{ name: 'L1', value: 60 }]
 const circleSize = 150

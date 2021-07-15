@@ -1,23 +1,27 @@
-import {
-  Timeline,
-  TrendingUp,
-  PermIdentity,
-  Storefront,
-  AttachMoney,
-  BarChart,
-  MailOutline,
-  DynamicFeed,
-  ChatBubbleOutline,
-  WorkOutline,
-  Report
-} from '@material-ui/icons'
-import { Link } from 'react-router-dom'
-import HomeIcon from '@material-ui/icons/Home'
+// import {
+//   Timeline,
+//   TrendingUp,
+//   PermIdentity,
+//   Storefront,
+//   AttachMoney,
+//   BarChart,
+//   MailOutline,
+//   DynamicFeed,
+//   ChatBubbleOutline,
+//   WorkOutline,
+//   Report
+// } from '@material-ui/icons'
+// import { Link } from 'react-router-dom'
+// import HomeIcon from '@material-ui/icons/Home'
 import React from 'react'
+// import Topbar from '../topbar/topbar'
+import { SidebarData } from './sidebarData'
+import SubMenu from './subMenu'
 
 function sidebar() {
   return (
     <div className='sm:invisible lg:visible h-screen bg-haram absolute w-56 text-gray-300 overflow-y-auto no-scrollbar'>
+      {/* <Topbar /> */}
       {/* <div className='text-gray-300'> */}
       {/* <div className='mb-3 '> */}
       <h3 className='text-xl text-white pt-5 pr-5 pb-2 flex items-center font-bold '>
@@ -31,6 +35,11 @@ function sidebar() {
       </h3>
       <div className='space-y-6 bg-haram mb-12'>
         <div className='mb-2 mt-4 w-56'>
+          {SidebarData.map((item, index) => {
+            return <SubMenu item={item} key={index} />
+          })}
+        </div>
+        {/* <div className='mb-2 mt-4 w-56'>
           <h3 className='text-sm text-gray-400 mr-2 pr-4 mb-2'>الرئيسي </h3>
           <ul className='list-none'>
             <Link to='/' className='link transition ease-out duration-700'>
@@ -114,7 +123,7 @@ function sidebar() {
               التقارير
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   )
