@@ -18,18 +18,18 @@ export const SidebarData = [
     subNav: [
       {
         title: 'first one',
-        path: '/',
-        icon: <Timeline />
+        path: '/'
+        // icon: <Timeline />
       },
       {
         title: '2',
-        path: '/',
-        icon: <Timeline />
+        path: '/'
+        // icon: <Timeline />
       },
       {
         title: '3',
-        path: '/',
-        icon: <Timeline />
+        path: '/'
+        // icon: <Timeline />
       }
     ]
   },
