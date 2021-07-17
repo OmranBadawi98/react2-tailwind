@@ -46,10 +46,10 @@ const SubMenu = ({ item }) => {
   return (
     <div>
       <div to={item.path} onClick={item.subNav && showSubnav}>
-        <h3 className='text-sm text-gray-400 mr-2 pr-4 mb-2'>الرئيسي </h3>
+        <h3 className='text-sm text-gray-400 mr-2 pr-4 mb-2'>{item.heading}</h3>
         <div className='list-none'>
-          <div className='items-center pt-1 pb-1 pr-5 mb-2 cursor-pointer flex text-lg hover:bg-gray-700 hover:text-white'>
-            <div className='ml-3'>{item.icon}</div>
+          <div className='items-center pt-1 pb-1 pr-5 mb-4 cursor-pointer flex text-base hover:bg-gray-700 hover:text-white'>
+            <div className='ml-3 '>{item.icon}</div>
             {item.title}
           </div>
           <div>
@@ -68,7 +68,7 @@ const SubMenu = ({ item }) => {
               <div>
                 <div className='list-none'>
                   <div
-                    className='items-center pt-1 pb-1 pr-14 mb-2 cursor-pointer flex text-lg  hover:bg-gray-700 hover:text-white'
+                    className='items-center pt-1 pb-1 pr-14 mb-2 cursor-pointer flex text-base hover:bg-gray-700 hover:text-white'
                     to={item.path}
                     key={index}
                   >

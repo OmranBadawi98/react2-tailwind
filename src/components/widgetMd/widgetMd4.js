@@ -79,10 +79,10 @@ function widgetMd() {
         </div>
       </div>
       <div className='flex p-3'>
-        <button class='pb-2 border hover:bg-gray-200 px-4 rounded-full'>
+        <button class='pb-2 border hover:bg-gray-200 py-1 px-4 rounded-full'>
           المزيد
         </button>
-        <button class='pb-2 mr-auto border hover:text-white border-green-400 hover:bg-green-400 px-4 rounded-full'>
+        <button class='pb-2 mr-auto border hover:text-white border-green-400 hover:bg-green-400 py-1 px-4 rounded-full'>
           رسالة جديدة
         </button>
       </div>

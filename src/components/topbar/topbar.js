@@ -12,7 +12,7 @@ import React from 'react'
 function topbar() {
   return (
     <div>
-      <div className='flex bg-white shadow font-serif w-screen  absolute h-16 sm:pr-0 lg:pr-56'>
+      <div className='flex bg-white shadow font-serif w-screen absolute h-16 sm:pr-0 lg:pr-60'>
         <div className='pt-0 pr-5 h-full flex items-center justify-between'>
           <div
             className='lg:hidden sm:visible '

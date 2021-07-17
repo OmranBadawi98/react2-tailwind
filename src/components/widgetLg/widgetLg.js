@@ -4,8 +4,8 @@ import Chart from '../chart/chart'
 
 function widgetLg() {
   return (
-    <div className='col-span-2 flex'>
-      <div className='w-full bg-white shadow h-60 xl:h-80 lg:h-80 md:h-80 sm:h-96 text-sm flex items-center justify-center'>
+    <div className='col-span-2'>
+      <div className='w-full bg-white shadow h-60 xl:h-72 lg:h-80 md:h-96 sm:h-80 text-sm flex items-center justify-center'>
         <div className='h-full w-full flex flex-wrap bg-white  '>
           <div className='w-full h-16 lg:h-16 md:h-14 text-xl pt-3 pr-3'>
             عدد الزوار
@@ -18,7 +18,7 @@ function widgetLg() {
             dataKey='Active User'
           />
         </div>
-        <div className='h-full w-2/4 items-center justify-center bg-haram-opacity bg-white flex flex-wrap'>
+        <div className='h-full w-2/4 items-center justify-center bg-haram-opacity bg-white'>
           <div className='w-full h-16 lg:h-16 md:h-14 text-xl pt-3 pr-3 flex  flex-wrap '>
             التقارير
           </div>

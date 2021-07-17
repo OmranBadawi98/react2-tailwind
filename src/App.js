@@ -11,10 +11,10 @@ function App() {
     <Router>
       <Topbar />
       {/* <div className='w-52 inset-0 h-screen'> */}
-      <div className='h-screen'>
+      <div className='h-screen bg-haram-200'>
         <Sidebar />
         {/* </div> */}
-        <div className='h-screen overflow-y-auto no-scrollbar bg-haram-200 sm:mr-0 lg:mr-56 pt-16'>
+        <div className='h-screen overflow-y-auto no-scrollbar bg-haram-200 sm:mr-0 lg:mr-60 pt-16'>
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/Analytics' component={Analytics} />

@@ -6,7 +6,7 @@ function widgetMd() {
     <div className='h-96 bg-white'>
       <div className=' text-xl text-grey-dark flex h-16 p-3 pt-4'>
         الملاحظات والأحداث
-        <button class=' mr-auto pb-2 border hover:bg-gray-200 px-4 rounded-full'>
+        <button class=' mr-auto pb-2 border hover:bg-gray-200 py-1 px-4 rounded-full'>
           إضافة
         </button>
       </div>

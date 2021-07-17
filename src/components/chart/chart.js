@@ -10,13 +10,13 @@ import {
 
 export default function Chart({ title, data, dataKey, grid }) {
   return (
-    <div
-      className='ml-3 mr-3 pl-1 pr-1  md:h-56 w-full items-center flex flex-wrap'
-      dir='ltr'
-    >
+    <div className='ml-3 mr-3 pl-1 pr-1  md:h-56 w-full ' dir='ltr'>
       <h3 className='pt-1 pb-1 text-base '>{title}</h3>
-      <ResponsiveContainer width='100%' height={200}>
-        <LineChart data={data}>
+      <ResponsiveContainer width='99%' height={200}>
+        <LineChart
+          data={data}
+          margin={{ top: 0, left: 0, right: 0, bottom: 8 }}
+        >
           <XAxis dataKey='name' stroke='#0cc2aa' />
           <Line
             type='monotone'

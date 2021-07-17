@@ -865,6 +865,7 @@ module.exports = {
       'responsive',
       'dark',
       'group-hover',
+      'group-focus',
       'focus-within',
       'hover',
       'focus',

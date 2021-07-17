@@ -12,7 +12,7 @@ function widgetMd() {
           </p>
         </div>
       </div>
-      <div className='text-sm text-grey-dark flex items-center justify-center h-64'>
+      <div className=' text-sm text-grey-dark flex items-center justify-center h-64'>
         <Chart2 />
       </div>
     </div>
